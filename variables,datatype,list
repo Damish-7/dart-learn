@@ -1,0 +1,129 @@
+import 'dart:io';
+
+void main()
+{
+  // print("Hello world");
+  // var a = stdin.readLineSync();
+  // print('Hello $a');
+
+  // print('enter 2 numbers');
+  // var input1 = stdin.readLineSync();
+  // var input2 = stdin.readLineSync();
+  
+  // var num1 = int.parse(input1!);
+  // var num2 = int.parse(input2!);
+
+  // print('SUM = ${num1+num2}');
+   
+
+  //  int a =10;
+  //  double b = 20;
+
+  //  num num1 = 20.0;
+  //  num num2 = 10;
+
+  //  String name = 'damish ';
+  //  String name1 = "i'm name damish";
+
+  //  String address = '''My name
+  //  adress  ''';
+
+  //  print(name.length);
+
+  // int num1 = 0;
+  
+  // if(num1< 0){
+  //   print('negative');
+  // }else if (num1 == 0)
+  // {
+  // print('zero');
+  // }else {
+  //   print('positive');
+  // }
+
+  // for(var i=0;i< 10; i++){
+  //   print(i);
+  // }
+
+  // print('enter 2  number');
+  // var num1 = stdin.readLineSync();
+  // var num2 = stdin.readLineSync();
+
+  // int input1 = int.parse(num1!);
+  // int input2 = int.parse(num2!);
+  // if(input1 < input2){
+  //   print('num2 $input2 is bigger');
+  // } else {
+  //   print('num1 $input1 is bigger');
+  // }
+
+
+  // print('enter 2  number');
+  // var num1 = stdin.readLineSync();
+  // var num2 = stdin.readLineSync();
+
+
+  // int input1 = int.parse(num1!);
+  // int input2 = int.parse(num2!);
+
+  // print('1 for addition \n 2 for subtraction \n 3 for multiplication'); 
+  // print('enter your choice');
+
+  // var choice = stdin.readLineSync();
+  // if(choice == 1){
+  //   int result1 = input1 + input2;
+  //   print('$result1');
+  // } else if (choice == 2){
+  //    int result2  = input1 -input2;
+  //    print('$result2');
+  //     } else if (choice == 3){
+  //       int result3 = input1 * input2;
+  //       print('$result3');
+  //     }else {
+  //       print(' mind your own business');
+  //     }
+
+  // var array =[123, 'Name',20.0];
+
+  // var numberlist = [12, 34, 45, 56];
+  // var listToadd = [22, 47, 78];
+
+  // print(numberlist.length); 
+
+  // if (numberlist.contains(66)){
+  //   print('list has 34');  
+  // } else {
+  //   print('list doesnot contain 34');
+  // }
+
+  // numberlist.add(14);
+  // numberlist.removeAt(1);
+  // numberlist.addAll(listToadd);
+  // print(numberlist);
+
+
+  // List<List<int>> list = [
+  //   [1, 2, 3],
+  //   [4, 5, 6]
+  // ];
+  // print(list[1][1]);
+
+//   List<int> numberList = [1,1, 1,, 1, 3, 60, 0, 0, 0];
+//   Set<int> numberSet = {1,1, 1,, 1, 3, 60, 0, 0, 0};
+
+// print(numberList);
+// print(numberSet);
+
+var maps={
+  "name":"Damish",
+  "age":22,
+};
+
+print(maps['name']);
+print(maps['age']);
+
+
+
+
+
+}
