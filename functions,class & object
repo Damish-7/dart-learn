@@ -1,0 +1,241 @@
+
+// void main() {
+//   sum();
+//   sumparams(2, 6);
+//   var sum1 = sumReturn(10, 11);
+//   print(sum1);
+
+//   sumReq(firstNumber: 20, secondNumber: 40, third: 90);
+
+//   sumFunction(23, 24, sumparams);
+
+//   sumFuture(12, 13);
+// }
+
+
+//  void sum()
+// {
+//   print(2+3);
+// }
+
+// void sumparams(int a, int b)
+// {
+// print('${a+b}');
+// }
+
+// int sumReturn(int a, int b)
+// {
+//   return a+b; 
+// }
+
+
+
+// void main() {
+//   sum();
+//   print('after Future');
+// }
+
+// Future<void> main() async {
+//   await sum();
+//   print('after Future');
+// }
+
+// Future<int> sumFuture(int a,int b)async{
+//   await Future.delayed( Duration(seconds: 5));
+//   print('sum Future ${a+b}');
+//   return a+b;
+// }
+
+// Future<void> sum()async{
+//   await sumFuture(33, 44);
+//   print('In just Sum');
+// }
+
+
+
+// void sumReq ({required int firstNumber,required int secondNumber,int third=0})
+// {
+  
+//   print(firstNumber + secondNumber + third);
+// }
+
+// void sumFunction(int a,int b, void Function(int,int) customSum)
+// {
+//   customSum(a,b);
+// }
+
+// Future<void> main() async {
+//   print('program started');
+
+//   String name = await getUserName();
+//   print('user name is: $name');
+//   print('program ended');
+// }
+
+// Future<String> getUserName() async {
+//   print('connecting to server...');
+//   await Future.delayed( Duration(seconds: 3));
+//   return "Damish";
+// }
+
+// Future<void> main() async {
+//   print('insert the card');
+//   int balance = await checkBalance();
+//   print('your balance is : $balance');
+//   print('Thank you ! take your card');
+// }
+
+// Future<int> checkBalance() async {
+//   print('processing....');
+//   await Future.delayed( Duration(seconds: 3));
+//   return 15000;
+// }
+
+// void main() {
+//   Person p1 = Person();
+//   p1.setData('Sam', 24);
+//   p1.showData();
+
+//   Person p2 = Person();
+//   p2.setData('Mark', 32);
+//   p2.showData();
+
+// }
+
+// class Person {
+//   String? name;
+//   int? age;
+
+//   void setData(String n, int a){
+//     name = n;
+//     age = a;
+//   }
+
+//   void showData(){
+//     print('Name=$name');
+//     print('Age=$age');
+//   }
+// }
+
+// void main(){
+//   Mobile m1 = Mobile();
+//   m1.setDetails('samsung', 30000);
+//   m1.showDetails();
+
+//   Mobile m2 = Mobile();
+//   m2.setDetails('apple', 32000);
+//   m2.showDetails();
+
+// }
+
+// class Mobile {
+//   String? brand;
+//   int? price;
+
+
+//    void setDetails(String b,int p){
+//     brand = b;
+//     price = p;
+//    }
+
+//    void showDetails(){
+//     print('brand = $brand');
+//     print('price = $price');
+//    }
+
+//    }
+
+// class Animal {
+//   void sayHello(){
+//     print('animal say hello');
+//   }
+// }
+
+// class Human extends Animal {
+//   void sayName(){
+//     print('say name');
+//   }
+// }
+
+// void main() {
+
+//   final human = Human();
+//   human.sayHello();
+//   human.sayName();
+// }
+
+// void main(){
+//   car c = car();
+//   c.showMOdel();
+//   c.start();
+// }
+
+// class vehicle {
+//   void start(){
+//     print("vehicle is starting");
+//   }
+// }
+
+// class car extends vehicle {
+//   void showMOdel(){
+//     print('this is car');
+//   }
+// }
+
+// class Person {
+//   String name = "unkown" ;
+
+//   void showName(){
+//     print('name $name');
+//   }
+// }
+
+// class Student extends Person {
+//   int rollNo = 103;
+
+//   void showRoll(){
+//     print('rollno $rollNo');
+//   }
+// }
+
+// void main(){
+//   Student s =Student();
+//   s.showName();
+//   s.showRoll();
+// }
+
+// class Animal {
+//   void sound(){
+//     print('animal makes sound');
+//   }
+// }
+
+// class Dog extends Animal {
+//   void sound(){
+//     super.sound();
+//       print('dog barks');
+    
+//   }
+// }
+
+// void main() {
+//   Dog d =Dog();
+//   d.sound();
+// }
+
+class Person{
+  Person (String Name){
+    print("person $Name");
+  }
+}
+
+class Student extends Person{
+  @override
+  Student (String Name) : super(Name){
+    print('student created');
+  }
+}
+
+void main() {
+  Student s = Student("damish");
+}
