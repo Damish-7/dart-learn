@@ -1,0 +1,106 @@
+// void main() {
+//   try {
+//     int a = 10 ~/ 0;   // error
+//     print(a);
+//   } catch (e) {
+//     print("Exception: $e");
+//   }
+// }
+
+// void main() {
+//   try {
+//     int num = int.parse("abc");
+//   } on FormatException {
+//     print("Invalid number format");
+//   } catch (e) {
+//     print("Other error: $e");
+//   }
+// }
+
+// void main() {
+//   int num = 7;
+
+//   if (num % 2 == 0){
+//     print("even number");
+//   } else {
+//     print('odd number');
+//   }
+// }
+
+// void main() {
+//   int marks = 83;
+
+//   if(marks >= 90){
+//     print("A+ grade");
+//   } else if (marks >= 75){
+//     print("A grade");
+//   } else if (marks >= 60){
+//     print("B grade");
+//   } else {
+//     print("fail");
+//   }
+// }
+
+// void main() {
+// int i=3;
+// while (i <= 5){
+//   print(i);
+//   i++;
+// }
+// }
+
+// void main(){
+//   int i = 1;
+//   do{
+//     print(i);
+//     i++;
+//   }while ( i<= 5);
+// }
+
+// void main(){
+//   var number = [1, 2, 3, 4, 5, 6, 7];
+//   for( var n in number){
+//     print(n);
+//   }
+// }
+
+// void main(){
+//   List<String> names = ["sam", "mark", "john"];
+
+//   for (String name in names){
+//     print(name);
+//   }
+// }
+
+// void main() {
+//   String password ="dart123";
+
+//   if(password== "dart123"){
+//     print("login successful");
+//   } else {
+//     print("wrong password");
+//   }
+
+
+// for(int i=1; i<=3; i++){
+//   print("attempt number $i");
+// }
+// }
+
+// void main(){
+// var callbacks = [];
+// for (var i = 0; i < 2; i++) {
+//   callbacks.add(() => print(i));
+// }
+
+// for (final c in callbacks) {
+//   c();
+// }
+
+// }
+
+void main() {
+  Set<int> numbers = {1, 2, 3, 3, 4};
+
+  print(numbers); 
+}
