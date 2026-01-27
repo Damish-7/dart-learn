@@ -1,0 +1,97 @@
+import 'package:flutter/material.dart';
+import 'package:login_sample/screens/splash.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: ScreenSplash(),
+    );
+  }
+}
+---------------------main-----------------------------
+
+import 'package:flutter/material.dart';
+import 'package:login_sample/screens/home.dart';
+import 'package:login_sample/screens/login.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+
+const SAVE_KEY_NAME = 'UserLoggedIn';
+
+class ScreenSplash extends StatefulWidget {
+  const ScreenSplash({super.key});
+
+  @override
+  State<ScreenSplash> createState() => _ScreenSplashState();
+}
+
+class _ScreenSplashState extends State<ScreenSplash> {
+  
+  @override
+  void initState() {
+    checkUserLoggedIn();
+    super.initState();
+  }
+
+  @override
+  void didChangeDependencies() {
+    // TODO: implement didChangeDependencies
+    super.didChangeDependencies();
+  }
+
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(body: Center(child: Image.asset('assets/images/wallpaper.jpg', height: 300,
+    ),
+    ),
+   );
+  }
+
+
+
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
+  Future<void> gotoLogin() async {
+   await Future.delayed(Duration(seconds: 3));
+   Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (ctx) => ScreenLogin(),),);
+
+  }
+
+  Future<void> checkUserLoggedIn() async{
+    final _sharedPrefs =await SharedPreferences.getInstance();
+    final _userLoggedIn = _sharedPrefs.getBool(SAVE_KEY_NAME);
+    if(_userLoggedIn == null || _userLoggedIn == false)
+    {
+      gotoLogin();
+
+    } else {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (ctx1)=> ScreenHome()));
+    }
+    
+  }
+
+}
+
+
+
+
+--------------------splash------------------------
